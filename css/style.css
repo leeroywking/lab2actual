@@ -1,9 +1,63 @@
+body {
+    background: img src = "bg.jpg"
+}
+
+
 header {
-    color: #2aacf8;
-    background: #029c3044;
+    color: #0e00d6;
+    background: #ff9b29;
+    /* border: 10px; */
+    border-color: black;
+    text-align: center;
+    /* max-width: 60%; */
 }
 
 main {
-    color: rgb(93, 216, 11);
-    background: rgb(223, 32, 223);
+    color: #0e00d6;
+    background: #ff9b29;
+    /* border: 20px; */
+    border-color: black;
+    font-size: 125%;
+    /* padding-left: 10%; */
+    float: right;
+    /* max-width: 60%; */
+}
+
+h3 {
+    font-size:150%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h1 {
+    background-color: #ff9b29;
+    color: #0e00d6;
+    padding: 10px;
+    /* z-index: 10; */
+    border: 10px;
+    border-color: black;
+    font-size: 300%;
+}
+
+#story1 {
+    background-color: #ff9b29;
+    color: #0e00d6;
+    max-width: 60%;
+    /* padding-right: 10%; */
+    float: left;
+    
+}
+
+#story2 {
+    background-color: #ff9b29;
+    color: #0e00d6;
+    /* padding-left: 10%; */
+    max-width: 60%;
+    float: right;
+}
+
+html {
+
 }
