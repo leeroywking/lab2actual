@@ -1,5 +1,8 @@
-body {
-    background: img src = "bg.jpg"
+.background {
+    z-index: -1;
+    position: absolute;
+    height: 100%; 
+    
 }
 
 
