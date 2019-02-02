@@ -114,15 +114,15 @@ var answer6 = prompt('How old do you think I am? # format please')
   if (answer6 === '32') {
     alert('You got it, I\'m a young old man');
     console.log('answer #' + i + ' correct');
-    i++;
+    break;
     }
-  else if (answer6 < '32') {
+  else if (answer6 < 32) {
     alert('Too low my friend but I appreciate the vote of confidence');
     console.log('answer #' + i + ' wrong');
     answer6 = prompt('Try again, how old am I? You were too low last time.')
     i++;
     }
-  else if (answer6 > '32') {
+  else if (answer6 > 32) {
     alert('You wound me to my core, too high');
     console.log('answer #' + i + ' wrong');
     answer6 = prompt('Try again, how old am I? You were too high \(jerk\) last time.')
