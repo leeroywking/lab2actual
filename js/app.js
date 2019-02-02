@@ -66,21 +66,21 @@ var answer2 = prompt('Is my favorite movie fight club? y/n/yes/no?').toUpperCase
         answer2 = 'NO'
         };
   console.log(answer2);
-  if (answer2 === 'NO')  { alert('CORRECT'), console.log('Correct')}
-  else alert('WRONG!'), console.log('wrong');
+  if (answer2 === 'NO')  { alert('CORRECT'); console.log('Correct');}
+  else {alert('WRONG!'), console.log('wrong');}
 
 
 var answer3 = prompt('Am I closer to 50 than I am 20? y/n/yes/no?').toUpperCase();
   console.log(answer3);
     if (answer3 === 'Y') {
-    answer2 = 'YES'
+    answer3 = 'YES'
     };
     if (answer3 === 'N') {
-    answer2 = 'NO'
+    answer3 = 'NO'
     };
     console.log(answer3);
-    if (answer3 === 'NO')  { alert('CORRECT'), console.log('Correct')}
-    else alert('WRONG!'), console.log('wrong');
+    if (answer3 === 'NO')  { alert('CORRECT'); console.log('Correct');}
+    else {alert('WRONG!'); console.log('wrong');}
 
 
 var answer4 = prompt('Did I graduate college in 2004?  y/n/yes/no').toUpperCase();
@@ -139,12 +139,14 @@ var list1 = [
   'cucumber'
 ]
 var veggies = prompt('Name one of my favorite plants...');
+var newVeggies;
 for (var guesses = 6; guesses > 0; guesses--){
   if (list1.indexOf(veggies)>=0){
-    
+    alert('Congrats, that\'s correct. Here are the other answers ' + list1 + '.' + 
+    'And you even showed me a few new ones like ' + newVeggies);
   }
   else {
-    list1.push(veggies);
+    list1.push(newVeggies);
     var veggies = prompt('Not even close, try again.');
 
   }
