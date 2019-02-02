@@ -129,3 +129,23 @@ var answer6 = prompt('How old do you think I am? # format please')
     i++;
     }
   }
+// This was made with the help of my new bff aileen :) YAY!
+var list1 = [
+  'pumpkin',
+  'apple',
+  'grape',
+  'orange',
+  'pear',
+  'cucumber'
+]
+var veggies = prompt('Name one of my favorite plants...');
+for (var guesses = 6; guesses > 0; guesses--){
+  if (list1.indexOf(veggies)>=0){
+    
+  }
+  else {
+    list1.push(veggies);
+    var veggies = prompt('Not even close, try again.');
+
+  }
+}
