@@ -1,5 +1,5 @@
 'use strict';
-
+var successes = 0
 // This function will turn a y/yes/n/no into a uniform output regardless of capitalization or length of response, it also returns false if no yes/no/y/n is entered
 function inputClean(input) {
   // This command takes the input and makes it lowercase
@@ -53,7 +53,7 @@ while (answer1 === false){
   answer1 = question1();
   answer1 = inputClean(answer1);
   }
-if (answer1 === 'yes')  { alert('CORRECT'), console.log('Correct');}
+if (answer1 === 'yes')  { alert('CORRECT'), console.log('Correct'); successes++;}
   else alert('WRONG!'), console.log('wrong'); 
 }       
 
@@ -67,7 +67,7 @@ if (answer1 === 'yes')  { alert('CORRECT'), console.log('Correct');}
           answer2 = 'NO'
           };
     console.log(answer2);
-    if (answer2 === 'NO')  { alert('CORRECT'); console.log('Correct');}
+    if (answer2 === 'NO')  { alert('CORRECT'); console.log('Correct'); successes++;}
     else {alert('WRONG!'), console.log('wrong');}}
 
 
@@ -81,7 +81,7 @@ var answer3 = prompt('Am I closer to 50 than I am 20? y/n/yes/no?').toUpperCase(
     answer3 = 'NO'
     };
     console.log(answer3);
-    if (answer3 === 'NO')  { alert('CORRECT'); console.log('Correct');}
+    if (answer3 === 'NO')  { alert('CORRECT'); console.log('Correct'); successes++;}
     else {alert('WRONG!'); console.log('wrong');}
   }
 
@@ -95,7 +95,7 @@ var answer4 = prompt('Did I graduate college in 2004?  y/n/yes/no').toUpperCase(
     answer4 = 'NO'
     };
   console.log(answer4);
-  if (answer4 === 'NO')  { alert('CORRECT'), console.log('Correct')}
+  if (answer4 === 'NO')  { alert('CORRECT'); console.log('Correct');successes++;}
   else alert('WRONG!'), console.log('wrong');
   }
 
@@ -109,7 +109,7 @@ var answer5 = prompt('Do I have more than 1 tattoo? y/n/yes/no').toUpperCase();
     answer5 = 'NO'
     };
   console.log(answer5);
-  if (answer5 === 'YES')  { alert('CORRECT'), console.log('Correct')}
+  if (answer5 === 'YES')  { alert('CORRECT'); console.log('Correct'); successes++;}
   else alert('WRONG!'), console.log('wrong');
   }
 
@@ -120,6 +120,7 @@ var answer6 = prompt('How old do you think I am? # format please')
   if (answer6 === '32') {
     alert('You got it, I\'m a young old man');
     console.log('answer #' + i + ' correct');
+    successes++;
     break;
     }
   else if (answer6 < 32) {
@@ -153,6 +154,7 @@ for (var guesses = 6; guesses > 0; guesses--){
   if (list1.indexOf(veggies)>=0){
     alert('Congrats, that\s correct. Here are the other answers ' + list1 + '.' + 
     ' And you even showed me a few new ones like ' + newVeggies);
+    successes++;
     break;
   }
   else {
@@ -162,6 +164,8 @@ for (var guesses = 6; guesses > 0; guesses--){
 }
 }
 
+var name = prompt("What is your name")
+
 question1();
 question2();
 question3();
@@ -169,3 +173,4 @@ question4();
 question5();
 question6();
 question7();
+alert(" Congratulations " + name + " you got " + successes + "/7 questions correct");
