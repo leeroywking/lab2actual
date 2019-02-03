@@ -1,19 +1,13 @@
-/* .background {
-    z-index: -1;
-    position: absolute;
-    height: 100%; 
-
-} */
-
-.back {
-    background-image: url("bg.jpg");
-    /* background-size: auto; */
-    background-position: center;
-    position: relative;
+body {
+    background-image: url("../images/bg.jpg");
     background-size: cover;
-    z-index: -1;
-    /* <img src = "bg.jpg"> */
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     color: #0e00d6;
     background: #ff9b29;

@@ -139,15 +139,15 @@ var list1 = [
   'cucumber'
 ]
 var veggies = prompt('Name one of my favorite plants...');
-var newVeggies;
+var newVeggies = [];
 for (var guesses = 6; guesses > 0; guesses--){
   if (list1.indexOf(veggies)>=0){
-    alert('Congrats, that\'s correct. Here are the other answers ' + list1 + '.' + 
-    'And you even showed me a few new ones like ' + newVeggies);
+    alert('Congrats, that\s correct. Here are the other answers ' + list1 + '.' + 
+    ' And you even showed me a few new ones like ' + newVeggies);
+    break;
   }
   else {
-    list1.push(newVeggies);
+    newVeggies.push(veggies);
     var veggies = prompt('Not even close, try again.');
-
   }
 }
