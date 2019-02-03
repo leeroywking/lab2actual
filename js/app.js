@@ -39,12 +39,12 @@ var cleanTestAnswer = inputClean(testAnswer);
  // This logs the groomed answer
 //  console.log("standardized input is " + cleanTestAnswer);
 // I commented this line out since i incorporated it into the input clean function
-
-function question1() {
+function question1(){
+function quest1() {
   var answer1 = prompt('Do you think I have ever been in a fight? y/n/yes/no')
   return answer1;
 }
-var answer1 = question1();
+var answer1 = quest1();
 console.log(answer1 + " was user response");
 answer1 = inputClean(answer1);
 console.log(answer1 + " is cleaned user reponse");
@@ -55,7 +55,7 @@ while (answer1 === false){
   }
 if (answer1 === 'yes')  { alert('CORRECT'), console.log('Correct');}
   else alert('WRONG!'), console.log('wrong'); 
-        
+}       
 
   function question2() {
     var answer2 = prompt('Is my favorite movie fight club? y/n/yes/no?').toUpperCase();
@@ -69,9 +69,9 @@ if (answer1 === 'yes')  { alert('CORRECT'), console.log('Correct');}
     console.log(answer2);
     if (answer2 === 'NO')  { alert('CORRECT'); console.log('Correct');}
     else {alert('WRONG!'), console.log('wrong');}}
-    question2()
 
 
+function question3(){
 var answer3 = prompt('Am I closer to 50 than I am 20? y/n/yes/no?').toUpperCase();
   console.log(answer3);
     if (answer3 === 'Y') {
@@ -83,8 +83,9 @@ var answer3 = prompt('Am I closer to 50 than I am 20? y/n/yes/no?').toUpperCase(
     console.log(answer3);
     if (answer3 === 'NO')  { alert('CORRECT'); console.log('Correct');}
     else {alert('WRONG!'); console.log('wrong');}
+  }
 
-
+function question4(){
 var answer4 = prompt('Did I graduate college in 2004?  y/n/yes/no').toUpperCase();
   console.log(answer4);
     if (answer4 === 'Y') {
@@ -96,8 +97,9 @@ var answer4 = prompt('Did I graduate college in 2004?  y/n/yes/no').toUpperCase(
   console.log(answer4);
   if (answer4 === 'NO')  { alert('CORRECT'), console.log('Correct')}
   else alert('WRONG!'), console.log('wrong');
+  }
 
-
+function question5(){
 var answer5 = prompt('Do I have more than 1 tattoo? y/n/yes/no').toUpperCase();
   console.log(answer5);
     if (answer5 === 'Y') {
@@ -109,7 +111,9 @@ var answer5 = prompt('Do I have more than 1 tattoo? y/n/yes/no').toUpperCase();
   console.log(answer5);
   if (answer5 === 'YES')  { alert('CORRECT'), console.log('Correct')}
   else alert('WRONG!'), console.log('wrong');
+  }
 
+function question6(){
 var answer6 = prompt('How old do you think I am? # format please')
   var i = 1;
   while (i < 5) {
@@ -131,6 +135,9 @@ var answer6 = prompt('How old do you think I am? # format please')
     i++;
     }
   }
+}
+
+function question7(){ 
 // This was made with the help of my new bff aileen :) YAY!
 var list1 = [
   'pumpkin',
@@ -153,3 +160,12 @@ for (var guesses = 6; guesses > 0; guesses--){
     var veggies = prompt('Not even close, try again.');
   }
 }
+}
+
+question1();
+question2();
+question3();
+question4();
+question5();
+question6();
+question7();
