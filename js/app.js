@@ -71,7 +71,7 @@ if (answer1 === 'yes')  { alert('CORRECT'), console.log('Correct');}
     else {alert('WRONG!'), console.log('wrong');}}
     question2()
 
-
+function question3(){
 var answer3 = prompt('Am I closer to 50 than I am 20? y/n/yes/no?').toUpperCase();
   console.log(answer3);
     if (answer3 === 'Y') {
@@ -83,8 +83,9 @@ var answer3 = prompt('Am I closer to 50 than I am 20? y/n/yes/no?').toUpperCase(
     console.log(answer3);
     if (answer3 === 'NO')  { alert('CORRECT'); console.log('Correct');}
     else {alert('WRONG!'); console.log('wrong');}
-
-
+  }
+  
+function question4(){
 var answer4 = prompt('Did I graduate college in 2004?  y/n/yes/no').toUpperCase();
   console.log(answer4);
     if (answer4 === 'Y') {
@@ -96,8 +97,9 @@ var answer4 = prompt('Did I graduate college in 2004?  y/n/yes/no').toUpperCase(
   console.log(answer4);
   if (answer4 === 'NO')  { alert('CORRECT'), console.log('Correct')}
   else alert('WRONG!'), console.log('wrong');
+  }
 
-
+function question5(){
 var answer5 = prompt('Do I have more than 1 tattoo? y/n/yes/no').toUpperCase();
   console.log(answer5);
     if (answer5 === 'Y') {
@@ -109,7 +111,9 @@ var answer5 = prompt('Do I have more than 1 tattoo? y/n/yes/no').toUpperCase();
   console.log(answer5);
   if (answer5 === 'YES')  { alert('CORRECT'), console.log('Correct')}
   else alert('WRONG!'), console.log('wrong');
+  }
 
+function question6(){
 var answer6 = prompt('How old do you think I am? # format please')
   var i = 1;
   while (i < 5) {
@@ -131,6 +135,9 @@ var answer6 = prompt('How old do you think I am? # format please')
     i++;
     }
   }
+}
+
+function question7(){ 
 // This was made with the help of my new bff aileen :) YAY!
 var list1 = [
   'pumpkin',
@@ -152,4 +159,5 @@ for (var guesses = 6; guesses > 0; guesses--){
     newVeggies.push(veggies);
     var veggies = prompt('Not even close, try again.');
   }
+}
 }
