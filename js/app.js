@@ -66,21 +66,21 @@ var answer2 = prompt('Is my favorite movie fight club? y/n/yes/no?').toUpperCase
         answer2 = 'NO'
         };
   console.log(answer2);
-  if (answer2 === 'NO')  { alert('CORRECT'), console.log('Correct')}
-  else alert('WRONG!'), console.log('wrong');
+  if (answer2 === 'NO')  { alert('CORRECT'); console.log('Correct');}
+  else {alert('WRONG!'), console.log('wrong');}
 
 
 var answer3 = prompt('Am I closer to 50 than I am 20? y/n/yes/no?').toUpperCase();
   console.log(answer3);
     if (answer3 === 'Y') {
-    answer2 = 'YES'
+    answer3 = 'YES'
     };
     if (answer3 === 'N') {
-    answer2 = 'NO'
+    answer3 = 'NO'
     };
     console.log(answer3);
-    if (answer3 === 'NO')  { alert('CORRECT'), console.log('Correct')}
-    else alert('WRONG!'), console.log('wrong');
+    if (answer3 === 'NO')  { alert('CORRECT'); console.log('Correct');}
+    else {alert('WRONG!'); console.log('wrong');}
 
 
 var answer4 = prompt('Did I graduate college in 2004?  y/n/yes/no').toUpperCase();
@@ -114,18 +114,40 @@ var answer6 = prompt('How old do you think I am? # format please')
   if (answer6 === '32') {
     alert('You got it, I\'m a young old man');
     console.log('answer #' + i + ' correct');
-    i++;
+    break;
     }
-  else if (answer6 < '32') {
+  else if (answer6 < 32) {
     alert('Too low my friend but I appreciate the vote of confidence');
     console.log('answer #' + i + ' wrong');
     answer6 = prompt('Try again, how old am I? You were too low last time.')
     i++;
     }
-  else if (answer6 > '32') {
+  else if (answer6 > 32) {
     alert('You wound me to my core, too high');
     console.log('answer #' + i + ' wrong');
     answer6 = prompt('Try again, how old am I? You were too high \(jerk\) last time.')
     i++;
     }
   }
+// This was made with the help of my new bff aileen :) YAY!
+var list1 = [
+  'pumpkin',
+  'apple',
+  'grape',
+  'orange',
+  'pear',
+  'cucumber'
+]
+var veggies = prompt('Name one of my favorite plants...');
+var newVeggies;
+for (var guesses = 6; guesses > 0; guesses--){
+  if (list1.indexOf(veggies)>=0){
+    alert('Congrats, that\'s correct. Here are the other answers ' + list1 + '.' + 
+    'And you even showed me a few new ones like ' + newVeggies);
+  }
+  else {
+    list1.push(newVeggies);
+    var veggies = prompt('Not even close, try again.');
+
+  }
+}
