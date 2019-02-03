@@ -57,17 +57,19 @@ if (answer1 === 'yes')  { alert('CORRECT'), console.log('Correct');}
   else alert('WRONG!'), console.log('wrong'); 
         
 
-var answer2 = prompt('Is my favorite movie fight club? y/n/yes/no?').toUpperCase();
-  console.log(answer2);
-    if (answer2 === 'Y') {
-        answer2 = 'YES'
-        };
-    if (answer2 === 'N') {
-        answer2 = 'NO'
-        };
-  console.log(answer2);
-  if (answer2 === 'NO')  { alert('CORRECT'); console.log('Correct');}
-  else {alert('WRONG!'), console.log('wrong');}
+  function question2() {
+    var answer2 = prompt('Is my favorite movie fight club? y/n/yes/no?').toUpperCase();
+    console.log(answer2);
+      if (answer2 === 'Y') {
+          answer2 = 'YES'
+          };
+      if (answer2 === 'N') {
+          answer2 = 'NO'
+          };
+    console.log(answer2);
+    if (answer2 === 'NO')  { alert('CORRECT'); console.log('Correct');}
+    else {alert('WRONG!'), console.log('wrong');}}
+    question2()
 
 
 var answer3 = prompt('Am I closer to 50 than I am 20? y/n/yes/no?').toUpperCase();
